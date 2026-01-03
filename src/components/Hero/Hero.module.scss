@@ -1,6 +1,40 @@
 @use "../../sass/variables" as v;
 
 .hero {
-  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  height: 85vh;
   background-color: v.$bg2-color;
+
+  .hero_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
+    gap: 0.5rem;
+  }
+  .flip {
+    display: inline-block;
+    transform: rotate(180deg);
+    text-align: right;
+  }
+  .title {
+    font-size: 2.25rem;
+    text-shadow: v.$text-shadow;
+  }
+  .name {
+    padding-left: 1rem;
+  }
+  .subtitle {
+    padding-left: 1rem;
+    font-size: 0.85rem;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: v.$box-shadow;
+  }
 }

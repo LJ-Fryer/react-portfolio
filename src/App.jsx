@@ -14,8 +14,6 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <h1>React Portfolio</h1>
-
       <About />
       <Tech />
       <Projects />
