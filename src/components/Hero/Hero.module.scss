@@ -1,0 +1,6 @@
+@use "../../sass/variables" as v;
+
+.hero {
+  height: 95vh;
+  background-color: v.$bg2-color;
+}

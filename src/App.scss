@@ -2,9 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
 
 * {
-  background-color: v.$bg1-color;
   font-family: "Google Sans", sans-serif;
-  text-shadow: v.$text-shadow;
   color: v.$text-color;
 }
 a {
@@ -13,7 +11,7 @@ a {
   :hover {
     text-decoration: none;
     color: white;
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 

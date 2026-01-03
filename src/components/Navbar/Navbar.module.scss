@@ -1,5 +1,40 @@
 @use "../../sass/variables" as v;
 
 .navbar {
-  background-color: v.$bg3-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7.5vh;
+  background-color: v.$link-color;
+
+  .navbar_left {
+    display: none;
+    img {
+      width: 2rem;
+      border-radius: 0.2rem;
+      box-shadow: v.$box-shadow;
+    }
+  }
+  .navbar_icons {
+    margin: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+    align-items: center;
+    text-shadow: v.$text-shadow;
+
+    a {
+      display: block;
+    }
+  }
+
+  .toggle_icon {
+    width: 100%;
+    height: auto;
+    background-color: v.$bg3-color;
+  }
+
+  .navbar_toggle {
+    // display: none;
+  }
 }
