@@ -1,5 +1,25 @@
 @use "../../sass/variables" as v;
 
 .tech {
-  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  padding: 1rem;
+  background-color: v.$link-color;
+
+  .skills_list {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .skill {
+    padding: 0.5rem;
+    font-size: 3rem;
+  }
+  .heading {
+    padding: 0 2rem;
+  }
 }

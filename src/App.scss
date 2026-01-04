@@ -7,6 +7,9 @@
   font-family: "Google Sans", sans-serif;
   color: v.$text-color;
 }
+html {
+  scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
   color: v.$link-color;

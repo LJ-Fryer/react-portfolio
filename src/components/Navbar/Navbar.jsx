@@ -1,12 +1,14 @@
 import { useState } from "react";
 import classes from "./Navbar.module.scss";
 import logo from "../../assets/ljf_logo.png";
-import MenuIcon from "@mui/icons-material/Menu";
-import HomeIcon from "@mui/icons-material/Home";
-import InfoIcon from "@mui/icons-material/Info";
-import HomeRepairServiceIcon from "@mui/icons-material/HomeRepairService";
-import FolderIcon from "@mui/icons-material/Folder";
-import CloseIcon from "@mui/icons-material/Close";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHouse,
+  faToolbox,
+  faFolder,
+  faCircleInfo,
+  faComment,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -19,30 +21,25 @@ const Navbar = () => {
         </a>
       </div>
 
-      <div className={classes.navbar_icons}>
+      <div className={classes.navbar_box}>
         <a href="/" aria-label="Home">
-          <HomeIcon />
-        </a>
-        <a href="#about" aria-label="About me">
-          <InfoIcon />
+          <FontAwesomeIcon icon={faHouse} className={classes.navbar_icon} />
         </a>
         <a href="#tech" aria-label="Tech stack">
-          <HomeRepairServiceIcon />
+          <FontAwesomeIcon icon={faToolbox} className={classes.navbar_icon} />
         </a>
         <a href="#projects" aria-label="Projects">
-          <FolderIcon />
+          <FontAwesomeIcon icon={faFolder} className={classes.navbar_icon} />
         </a>
-        <div className={classes.navbar_toggle}>
-          <button
-            className={`${classes.toggle_icon} ${classes.close}`}
-            aria-label="Open Navigation Menu"
-            onClick={() => {
-              setIsExpanded(!isExpanded);
-            }}
-          >
-            <CloseIcon />
-          </button>
-        </div>
+        <a href="#about" aria-label="About me">
+          <FontAwesomeIcon
+            icon={faCircleInfo}
+            className={classes.navbar_icon}
+          />
+        </a>
+        <a href="#contact" aria-label="Contact me">
+          <FontAwesomeIcon icon={faComment} className={classes.navbar_icon} />
+        </a>
       </div>
     </nav>
   );
@@ -51,4 +48,15 @@ const Navbar = () => {
 export default Navbar;
 {
   /* <MenuIcon />; */
+}
+{
+  /* <div className={classes.navbar_toggle}>
+  <button
+    className={`${classes.toggle_icon} ${classes.close}`}
+    aria-label="Open Navigation Menu"
+    onClick={() => {
+      setIsExpanded(!isExpanded);
+    }}
+  ></button>
+</div>; */
 }

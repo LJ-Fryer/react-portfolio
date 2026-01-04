@@ -1,0 +1,5 @@
+@use "../../sass/variables" as v;
+
+.heading {
+  text-shadow: v.$text-shadow;
+}

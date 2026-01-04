@@ -1,7 +1,11 @@
 import classes from "./Projects.module.scss";
 
 const Projects = () => {
-  return <div className={classes.projects}>Projects</div>;
+  return (
+    <div className={classes.projects} id="projects">
+      Projects
+    </div>
+  );
 };
 
 export default Projects;

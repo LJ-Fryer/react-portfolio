@@ -5,7 +5,9 @@
   flex-direction: column;
   justify-content: center;
   padding: 2rem;
-  height: 85vh;
+  height: 92.5vh;
+  border-top: v.$page-border;
+  border-bottom: v.$page-border;
   background-color: v.$bg2-color;
 
   .hero_box {

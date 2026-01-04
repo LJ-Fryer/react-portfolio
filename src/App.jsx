@@ -1,22 +1,21 @@
-import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router";
 import "modern-normalize";
 import "./App.scss";
-import trapezeImage from "./assets/trapeze.png";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
-import About from "./components/About/About";
-import Contact from "./components/Contact/Contact";
 import Tech from "./components/Tech/Tech";
 import Projects from "./components/Projects/Projects";
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
-      <About />
       <Tech />
       <Projects />
+      <About />
       <Contact />
     </>
   );
