@@ -6,10 +6,10 @@
   justify-content: center;
   height: 50vh;
   padding: 1rem;
+  gap: 1rem;
   background-color: v.$link-color;
 
   .skills_list {
-    margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;

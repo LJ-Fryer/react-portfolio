@@ -1,5 +1,12 @@
 @use "../../sass/variables" as v;
 
 .projects {
-  background-color: v.$link-hover-color;
+  height: 100vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: v.$bg2-color;
 }
