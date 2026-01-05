@@ -1,4 +1,3 @@
-import { BrowserRouter, Route, Routes } from "react-router";
 import "modern-normalize";
 import "./App.scss";
 import Navbar from "./components/Navbar/Navbar";
@@ -22,6 +21,3 @@ function App() {
 }
 
 export default App;
-{
-  /* <img src={trapezeImage} alt="Flying high on a trapeze" />; */
-}

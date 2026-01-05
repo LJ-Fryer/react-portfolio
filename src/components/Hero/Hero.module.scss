@@ -3,9 +3,8 @@
 .hero {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding: 2rem;
-  height: 92.5vh;
+  height: 100vh;
   border-top: v.$page-border;
   border-bottom: v.$page-border;
   background-color: v.$bg2-color;
@@ -22,16 +21,10 @@
     transform: rotate(180deg);
     text-align: right;
   }
-  .title {
-    font-size: 2.25rem;
-    text-shadow: v.$text-shadow;
-  }
-  .name {
-    padding-left: 1rem;
-  }
+
+  .name,
   .subtitle {
     padding-left: 1rem;
-    font-size: 0.85rem;
   }
 
   img {

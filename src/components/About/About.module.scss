@@ -1,6 +1,25 @@
 @use "../../sass/variables" as v;
 
 .about {
-  height: 95vh;
-  background-color: v.$bg1-color;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: v.$link-color;
+
+  .about_box {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  img {
+    width: 80%;
+    opacity: 0.7;
+    border-radius: 50%;
+    box-shadow: -3px 10px 45px -7px rgba(171, 171, 171, 0.68);
+  }
 }
