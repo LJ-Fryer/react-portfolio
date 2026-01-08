@@ -46,17 +46,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-{
-  /* <MenuIcon />; */
-}
-{
-  /* <div className={classes.navbar_toggle}>
-  <button
-    className={`${classes.toggle_icon} ${classes.close}`}
-    aria-label="Open Navigation Menu"
-    onClick={() => {
-      setIsExpanded(!isExpanded);
-    }}
-  ></button>
-</div>; */
-}

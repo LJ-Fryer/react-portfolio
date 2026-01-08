@@ -1,13 +1,14 @@
 @use "../../sass/variables" as v;
 
 .contact {
-  height: 20vh;
+  min-height: 20vh;
   padding: 2rem;
   background-color: v.$bg2-color;
 
   .contact_box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 2rem;
+    gap: 1rem;
+    padding: 1rem;
   }
 }

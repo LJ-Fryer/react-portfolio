@@ -1,19 +1,15 @@
 @use "../../sass/variables" as v;
+@import "../../sass//mixins";
 
 .tech {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 50vh;
-  padding: 1rem;
+  @include flex(column, center, flex-start);
+  min-height: 50vh;
+  padding: 2rem 1rem;
   gap: 1rem;
   background-color: v.$link-color;
 
   .skills_list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    @include flex(row, center, center, wrap);
   }
   .skill {
     padding: 0.5rem;

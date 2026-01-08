@@ -1,12 +1,10 @@
 @use "../../sass/variables" as v;
+@import "../../sass/mixins";
 
 .projects {
-  height: 50vh;
+  @include flex(column, center, center);
+  min-height: 50vh;
   padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 1rem;
   background-color: v.$bg2-color;
 }

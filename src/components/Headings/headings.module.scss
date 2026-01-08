@@ -1,15 +1,17 @@
 @use "../../sass/variables" as v;
 
+.heading {
+  text-shadow: v.$text-shadow;
+}
+
 .h1 {
   font-size: 2.25rem;
-  text-shadow: v.$text-shadow;
 }
 .h2 {
   font-size: 1.75rem;
-  text-shadow: v.$text-shadow;
 }
 .h3 {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 .para {
   font-size: 0.85rem;

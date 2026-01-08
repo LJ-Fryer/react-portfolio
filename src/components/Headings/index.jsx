@@ -2,7 +2,7 @@ import classes from "./headings.module.scss";
 
 export const H1 = ({ children, className, ...rest }) => {
   return (
-    <h1 className={`${classes.h1} ${className}`} {...rest}>
+    <h1 className={`${classes.h1} ${classes.heading} ${className}`} {...rest}>
       {children}
     </h1>
   );
@@ -10,7 +10,7 @@ export const H1 = ({ children, className, ...rest }) => {
 
 export const H2 = ({ children, className, ...rest }) => {
   return (
-    <h2 className={`${classes.h2} ${className}`} {...rest}>
+    <h2 className={`${classes.h2} ${classes.heading} ${className}`} {...rest}>
       {children}
     </h2>
   );
@@ -18,7 +18,7 @@ export const H2 = ({ children, className, ...rest }) => {
 
 export const H3 = ({ children, className, ...rest }) => {
   return (
-    <h3 className={`${classes.h3} ${className}`} {...rest}>
+    <h3 className={`${classes.h3} ${classes.heading} ${className}`} {...rest}>
       {children}
     </h3>
   );

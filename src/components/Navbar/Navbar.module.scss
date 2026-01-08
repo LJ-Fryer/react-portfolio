@@ -1,12 +1,11 @@
 @use "../../sass/variables" as v;
+@import "../../sass/mixins";
 
 .navbar {
+  @include flex(row, space-between, center);
   position: fixed;
   top: 0;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 7.5vh;
   background-color: v.$link-color;
 
@@ -23,7 +22,6 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 0.75rem;
-    align-items: center;
     text-shadow: v.$text-shadow;
 
     a {
@@ -35,11 +33,5 @@
       border-radius: 0.25rem;
       font-size: 1.25rem;
     }
-  }
-
-  .toggle_icon {
-    width: 100%;
-    height: auto;
-    background-color: v.$bg3-color;
   }
 }

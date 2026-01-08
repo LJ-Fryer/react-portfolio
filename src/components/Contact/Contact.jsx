@@ -1,7 +1,6 @@
 import classes from "./Contact.module.scss";
-import { H3 } from "../Headings/index";
+import { H3, P } from "../Headings/index";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
@@ -19,7 +18,7 @@ const Contact = () => {
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
         <a href="mailto:codingyogi7@gmail.com">
-          <FontAwesomeIcon icon={faEnvelope} />
+          <P>codingyogi7@gmail.com</P>
         </a>
       </div>
     </div>
