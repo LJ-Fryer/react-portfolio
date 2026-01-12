@@ -2,14 +2,14 @@
 @import "../../sass//mixins";
 
 .tech {
-  @include flex(column, center, flex-start);
+  @include flex(column, center, flex-start, v.$bg2-color, v.$text-color);
   min-height: 50vh;
   padding: 2rem 1rem;
   gap: 1rem;
-  background-color: v.$link-color;
 
   .skills_list {
-    @include flex(row, center, center, wrap);
+    @include flex(row, center, center, v.$bg2-color, v.$text-color);
+    flex-wrap: wrap;
   }
   .skill {
     padding: 0.5rem;

@@ -2,7 +2,7 @@
 @import "../../sass//mixins";
 
 .project_card {
-  @include flex(center, center);
+  @include flex(row, center, center);
   max-width: 350px;
   border: 3px solid rgba(255, 255, 255, 0.5);
   box-shadow: v.$box-shadow;

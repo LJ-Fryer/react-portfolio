@@ -11,7 +11,7 @@ const ProjectCard = () => {
     <article className={classes.project_card}>
       <div className={classes.info_box}>
         <H3 className={classes.heading}>Google Books API Project</H3>
-        <P className={classes.card_para}>
+        <P className={classes.para}>
           A responsive book‑search app showcasing clean UI, API integration, and
           scalable React component architecture.
         </P>

@@ -9,13 +9,13 @@ const Contact = () => {
       <H3>Get in touch</H3>
       <div className={classes.contact_box}>
         <a href="https://github.com/LJ-Fryer" target="_blank">
-          <FontAwesomeIcon icon={faGithub} />
+          <FontAwesomeIcon icon={faGithub} className={classes.icon} />
         </a>
         <a
           href="https://www.linkedin.com/in/linda-fryer-ba2294ba/"
           target="_blank"
         >
-          <FontAwesomeIcon icon={faLinkedin} />
+          <FontAwesomeIcon icon={faLinkedin} className={classes.icon} />
         </a>
         <a href="mailto:codingyogi7@gmail.com">
           <P>codingyogi7@gmail.com</P>
