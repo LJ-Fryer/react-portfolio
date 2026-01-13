@@ -1,7 +1,6 @@
 @use "../../sass/variables" as v;
 
 .contact {
-  min-height: 20vh;
   padding: 2rem;
   background-color: v.$bg1-color;
   color: v.$text-color;
@@ -13,6 +12,16 @@
     padding: 1rem;
   }
   .icon {
+    font-size: 1.5rem;
     color: v.$text-color;
   }
+}
+
+@media (min-width: 577px) {
+}
+
+@media (min-width: 769px) {
+}
+
+@media (min-width: 1081px) {
 }

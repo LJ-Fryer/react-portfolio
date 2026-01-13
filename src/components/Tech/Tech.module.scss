@@ -2,7 +2,7 @@
 @import "../../sass//mixins";
 
 .tech {
-  @include flex(column, center, flex-start, v.$bg2-color, v.$text-color);
+  @include flex(column, center, center, v.$bg2-color, v.$text-color);
   min-height: 50vh;
   padding: 2rem 1rem;
   gap: 1rem;
