@@ -2,13 +2,24 @@
 @import "../../sass//mixins";
 
 .hero {
-  @include flex(column, center, center);
-  padding: 4rem 2rem;
+  @include flex(column);
   height: 100vh;
   width: 100%;
 
   .hero_box {
-    @include flex(column, center);
+    max-width: 350px;
+  }
+
+  .text_box {
+    @include flex(column, flex-end, flex-start);
+    padding-bottom: 3rem;
+    flex: 1;
+    height: 45%;
+    gap: 0.5rem;
+  }
+  .img_box {
+    @include flex(column, flex-start, flex-start);
+    padding-top: 3rem;
     flex: 1;
     height: 45%;
     gap: 0.5rem;
@@ -26,10 +37,26 @@
 
   img {
     width: 100%;
-    max-width: 350px;
+    max-width: 300px;
     height: auto;
     object-fit: cover;
     border-radius: 0.5rem;
     box-shadow: v.$box-shadow;
+  }
+}
+
+@media (min-width: 577px) {
+}
+
+@media (min-width: 769px) {
+}
+
+@media (min-width: 1081px) {
+  .hero {
+    @include flex(row);
+  }
+
+  .text_box {
+    @include flex(column, center, center);
   }
 }
