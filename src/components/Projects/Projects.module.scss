@@ -4,6 +4,6 @@
 .projects {
   @include flex(column, center, center);
   min-height: 50vh;
-  padding: 1rem;
+  padding: 2rem;
   gap: 1rem;
 }

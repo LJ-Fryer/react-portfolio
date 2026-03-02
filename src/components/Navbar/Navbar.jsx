@@ -1,6 +1,5 @@
 import { useState } from "react";
 import classes from "./Navbar.module.scss";
-import logo from "../../assets/ljf_logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHouse,
@@ -15,12 +14,6 @@ const Navbar = () => {
 
   return (
     <nav className={classes.navbar}>
-      <div className={classes.navbar_left}>
-        <a href="/">
-          <img src={logo} alt="LJF logo" />
-        </a>
-      </div>
-
       <div className={classes.navbar_box}>
         <a href="/" aria-label="Home">
           <FontAwesomeIcon icon={faHouse} className={classes.navbar_icon} />

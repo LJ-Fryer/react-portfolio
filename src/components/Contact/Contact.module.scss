@@ -5,23 +5,28 @@
   background-color: v.$bg1-color;
   color: v.$text-color;
 
-  .contact_box {
+  &_box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
     padding: 1rem;
+    text-align: center;
   }
-  .icon {
-    font-size: 1.5rem;
+}
+
+.icon {
+    font-size: 2em;
     color: v.$text-color;
   }
-}
 
 @media (min-width: 577px) {
+  .icon {
+  font-size: 3rem;
+}
 }
 
-@media (min-width: 769px) {
-}
+// @media (min-width: 769px) {
+// }
 
-@media (min-width: 1081px) {
-}
+// @media (min-width: 1081px) {
+// }

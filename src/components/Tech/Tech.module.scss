@@ -6,16 +6,25 @@
   min-height: 50vh;
   padding: 2rem 1rem;
   gap: 1rem;
-
-  .skills_list {
+}
+.skills_list {
     @include flex(row, center, center, v.$bg2-color, v.$text-color);
+    max-width: 90%;
     flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.05); padding: 16px; border-radius: 12px; backdrop-filter: blur(4px);
   }
   .skill {
     padding: 0.5rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .heading {
     padding: 0 2rem;
   }
-}
+  @media (min-width: 577px) {
+    .skills_list {
+      max-width: 80%;
+    }
+    .skill {
+      font-size: 3rem;
+    }
+  }

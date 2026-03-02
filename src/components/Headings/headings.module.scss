@@ -14,12 +14,12 @@
   font-size: 1rem;
 }
 .para {
-  font-size: 0.85rem;
+  font-size: 0.65rem;
 }
 
 @media (min-width: 577px) {
   .h1 {
-    font-size: 3.25rem;
+    font-size: 3.5rem;
   }
   .h2 {
     font-size: 2.75rem;
@@ -28,7 +28,7 @@
     font-size: 1.5rem;
   }
   .para {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -47,14 +47,14 @@
   }
 }
 
-@media (min-width: 1081px) {
-  .h1 {
-    font-size: 4rem;
-  }
-  .h2 {
-    font-size: 3.5rem;
-  }
-  .h3 {
-    font-size: 1.75rem;
-  }
-}
+// @media (min-width: 1081px) {
+//   .h1 {
+//     font-size: 4rem;
+//   }
+//   .h2 {
+//     font-size: 3.5rem;
+//   }
+//   .h3 {
+//     font-size: 1.75rem;
+//   }
+// }

@@ -2,48 +2,44 @@
 @import "../../sass/mixins";
 
 .navbar {
-  @include flex(row, space-between, center, v.$text-color2);
+  @include flex(row, space-between, center);
+  padding: .5rem 0;
   position: fixed;
+  z-index: 3;
   top: 0;
   width: 100%;
   min-height: 7.5vh;
-  background-color: rgba(159, 159, 159, 0.5);
+  background-color: v.$bg1-color; //rgba(159, 159, 159, 0.5)
 
-  .navbar_left {
-    display: none;
-    img {
-      width: 2rem;
-      border-radius: 0.2rem;
-      box-shadow: v.$box-shadow;
-    }
-  }
-  .navbar_box {
+  &_box {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 0.75rem;
+    width: 90%;
     text-shadow: v.$text-shadow;
   }
-}
-.navbar_icon {
+  &_icon {
   padding: 0.5rem;
-  border: 3px solid rgba(255, 255, 255, 0.1);
+  background-color: v.$bg1-color;
+  box-shadow: v.$box-shadow;
   border-radius: 0.25rem;
-  font-size: 2rem;
+  font-size: 1.25rem;
+  color: #fff;
   opacity: 0.7;
+  }
 }
+
 
 @media (min-width: 577px) {
   .navbar_icon {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
     padding: 0.75rem;
   }
 }
 
-@media (min-width: 769px) {
-}
+// @media (min-width: 769px) {
+// }
 
-@media (min-width: 1081px) {
-  .navbar {
-  }
-}
+// @media (min-width: 1081px) {
+// }
