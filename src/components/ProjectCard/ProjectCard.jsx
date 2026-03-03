@@ -3,7 +3,8 @@ import { H3, P } from "../..//components/Headings";
 // import ashtangaImage from "../../assets/ashtanga_project.jpg";
 import gbImage from "../../assets/gb_project.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faAws } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import netlifyIcon from "../../assets/netlify-logo-lightmode.png"
 // import { faRocket } from "@fortawesome/free-solid-svg-icons";
 
 const ProjectCard = () => {
@@ -21,7 +22,9 @@ const ProjectCard = () => {
               <a href="https://github.com/LJ-Fryer/book-search" target="_blank">
               <FontAwesomeIcon icon={faGithub} />
               </a>
-              <a href="" target="_blank"><FontAwesomeIcon icon={faAws} /></a>
+              <a href="https://ljf-portfolio-2026.netlify.app/" target="_blank">
+                <img src={netlifyIcon} alt="Hosted on Netlify" className={classes.netlify}/>
+              </a>
             </div>
           </div>
           <div className={classes.inner}>

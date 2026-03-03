@@ -47,6 +47,10 @@
   a {
     color: v.$text-color;
   }
+  .netlify {
+    height: 1.25rem;
+    width: auto;
+  }
 
 @media (min-width: 577px) {
 .project_box {
@@ -61,5 +65,8 @@
 .card_links {
   margin-top: .65rem;
   font-size: 2rem;
+  }
+.netlify {
+  height: 1.75rem;
   }
 }

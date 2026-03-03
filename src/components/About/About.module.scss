@@ -8,25 +8,32 @@
   padding: 2.5rem;
 }
 .wrapper {
-  @include flex(column);
+  @include flex(column, stretch);
   gap: 1rem;
   background: transparent;
   }
 
 .box {
-    @include flex(column, center, center);
+    @include flex(column);
+    flex: 1;
     max-width: 500px;
-    padding: .5rem;
+    background: rgba(255, 255, 255, 0.05); 
+    border-radius: 12px; 
+
+  }
+.card {
+  @include flex(column);
+    padding: 16px;
     gap: 0.5rem;
     flex: 1;
-    background: rgba(255, 255, 255, 0.05); 
     padding: 16px; 
-    border-radius: 12px; 
     backdrop-filter: blur(4px);
-  }
+    background: transparent;
+
+}
 
 .para {
-    padding: 1.5rem;
+    padding: .75rem;
     line-height: 1.5;
     }
   img {
