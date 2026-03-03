@@ -22,7 +22,7 @@ const ProjectCard = () => {
               <a href="https://github.com/LJ-Fryer/book-search" target="_blank">
               <FontAwesomeIcon icon={faGithub} />
               </a>
-              <a href="https://ljf-portfolio-2026.netlify.app/" target="_blank">
+              <a href="https://google-api-book-search.netlify.app/" target="_blank">
                 <img src={netlifyIcon} alt="Hosted on Netlify" className={classes.netlify}/>
               </a>
             </div>
